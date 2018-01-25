@@ -10,4 +10,6 @@ import Foundation
 
 // https://swapi.co/api/people/schema
 
-
+struct People {
+    
+}

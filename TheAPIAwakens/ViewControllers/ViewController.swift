@@ -19,7 +19,14 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
+    @IBAction func displayStarWarsCategory(_ sender: UIButton) {
+        
+        let starwarsCategoryViewController = self.storyboard?.instantiateViewController(withIdentifier: "StarwarsCategory") as! StarwarsCategoryViewController
+        starwarsCategoryViewController.category = sender.tag
+        self.present(starwarsCategoryViewController, animated: true, completion: nil)
+        
+    }
 }
 

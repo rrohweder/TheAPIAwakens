@@ -8,6 +8,17 @@
 
 import UIKit
 
+enum StarwarsCategory {
+    case People
+    case Vehicles
+    case Starships
+}
+
+let StarwarsCategoryTagIntToString:[Int:StarwarsCategory] =
+    [1:.People, 2:.Vehicles, 3:.Starships]
+
+var currentCategory: StarwarsCategory? = nil
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -24,7 +35,7 @@ class ViewController: UIViewController {
     @IBAction func displayStarWarsCategory(_ sender: UIButton) {
         
         let starwarsCategoryViewController = self.storyboard?.instantiateViewController(withIdentifier: "StarwarsCategory") as! StarwarsCategoryViewController
-        starwarsCategoryViewController.category = sender.tag
+        starwarsCategoryViewController.category = StarwarsCategoryTagIntToString[sender.tag]
         self.present(starwarsCategoryViewController, animated: true, completion: nil)
         
     }

@@ -18,75 +18,106 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="K8c-d1-Lza">
-                                <rect key="frame" x="29" y="103.5" width="317" height="460"/>
-                                <subviews>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9g-D8-fa5">
-                                        <rect key="frame" x="108.5" y="0.0" width="100" height="140"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="140" id="lIv-bC-D2h"/>
-                                            <constraint firstAttribute="width" constant="100" id="tfK-oE-nhY"/>
-                                        </constraints>
-                                        <state key="normal" title="Characters" image="icon-characters"/>
-                                        <connections>
-                                            <action selector="displayStarWarsCategory:" destination="BYZ-38-t0r" eventType="touchUpInside" id="llM-cM-V15"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PkU-qo-6SE">
-                                        <rect key="frame" x="8.5" y="149" width="300" height="2"/>
-                                        <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="300" id="BPN-NM-Wgn"/>
-                                            <constraint firstAttribute="height" constant="2" id="UFv-A8-aCC"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xR3-fV-1xm">
-                                        <rect key="frame" x="108.5" y="160" width="100" height="140"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="5VE-76-UlC"/>
-                                            <constraint firstAttribute="height" constant="140" id="aKH-9t-aNA"/>
-                                        </constraints>
-                                        <state key="normal" title="Vehicles" image="icon-vehicles"/>
-                                        <connections>
-                                            <action selector="displayStarWarsCategory:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gYP-b1-Vtp"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnK-So-9dh">
-                                        <rect key="frame" x="8.5" y="309" width="300" height="2"/>
-                                        <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="2" id="gJx-xm-jRc"/>
-                                            <constraint firstAttribute="width" constant="300" id="uPv-3d-juf"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvy-Q4-FUP">
-                                        <rect key="frame" x="108.5" y="320" width="100" height="140"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="Snr-dB-nnf"/>
-                                            <constraint firstAttribute="height" constant="140" id="jdl-XA-SGM"/>
-                                        </constraints>
-                                        <state key="normal" title="Starships" image="icon-starships"/>
-                                        <connections>
-                                            <action selector="displayStarWarsCategory:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2JR-5H-oUP"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9g-D8-fa5">
+                                <rect key="frame" x="137.5" y="103.5" width="100" height="140"/>
                                 <constraints>
-                                    <constraint firstItem="PkU-qo-6SE" firstAttribute="leading" secondItem="K8c-d1-Lza" secondAttribute="leading" constant="8.5" id="Rae-x1-jvT"/>
-                                    <constraint firstAttribute="trailing" secondItem="PkU-qo-6SE" secondAttribute="trailing" constant="8.5" id="u6g-3M-7Z2"/>
+                                    <constraint firstAttribute="height" constant="140" id="lIv-bC-D2h"/>
+                                    <constraint firstAttribute="width" constant="100" id="tfK-oE-nhY"/>
                                 </constraints>
-                            </stackView>
+                                <state key="normal" title="Characters" image="icon-characters"/>
+                                <connections>
+                                    <action selector="displayStarWarsCategory:" destination="BYZ-38-t0r" eventType="touchUpInside" id="llM-cM-V15"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PkU-qo-6SE">
+                                <rect key="frame" x="37.5" y="252.5" width="300" height="2"/>
+                                <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="BPN-NM-Wgn"/>
+                                    <constraint firstAttribute="height" constant="2" id="UFv-A8-aCC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xR3-fV-1xm">
+                                <rect key="frame" x="137.5" y="263.5" width="100" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="5VE-76-UlC"/>
+                                    <constraint firstAttribute="height" constant="140" id="aKH-9t-aNA"/>
+                                </constraints>
+                                <state key="normal" title="Vehicles" image="icon-vehicles"/>
+                                <connections>
+                                    <action selector="displayStarWarsCategory:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gYP-b1-Vtp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnK-So-9dh">
+                                <rect key="frame" x="37.5" y="412.5" width="300" height="2"/>
+                                <color key="backgroundColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="gJx-xm-jRc"/>
+                                    <constraint firstAttribute="width" constant="300" id="uPv-3d-juf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvy-Q4-FUP">
+                                <rect key="frame" x="137.5" y="423.5" width="100" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Snr-dB-nnf"/>
+                                    <constraint firstAttribute="height" constant="140" id="jdl-XA-SGM"/>
+                                </constraints>
+                                <state key="normal" title="Starships" image="icon-starships"/>
+                                <connections>
+                                    <action selector="displayStarWarsCategory:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2JR-5H-oUP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="People" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMF-hc-xg3">
+                                <rect key="frame" x="161.5" y="219" width="52.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vehicles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lV-hi-1Gm">
+                                <rect key="frame" x="156" y="383" width="64" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Starships" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyl-7u-1df">
+                                <rect key="frame" x="152" y="542" width="72" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The API Awakens!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXS-sf-ZIx">
+                                <rect key="frame" x="94" y="35" width="188" height="29"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="24"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="K8c-d1-Lza" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HTQ-h0-PzI"/>
-                            <constraint firstItem="K8c-d1-Lza" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iyj-a8-dOY"/>
+                            <constraint firstItem="PkU-qo-6SE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4hU-ah-nZb"/>
+                            <constraint firstItem="PkU-qo-6SE" firstAttribute="top" secondItem="h9g-D8-fa5" secondAttribute="bottom" constant="9" id="BiI-20-NWq"/>
+                            <constraint firstItem="h9g-D8-fa5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CuA-kg-tHl"/>
+                            <constraint firstItem="YMF-hc-xg3" firstAttribute="top" secondItem="h9g-D8-fa5" secondAttribute="bottom" constant="-24.5" id="L4f-cZ-zjf"/>
+                            <constraint firstItem="gyl-7u-1df" firstAttribute="top" secondItem="dvy-Q4-FUP" secondAttribute="bottom" constant="-21.5" id="OEi-lc-d7j"/>
+                            <constraint firstItem="xR3-fV-1xm" firstAttribute="top" secondItem="h9g-D8-fa5" secondAttribute="bottom" constant="20" id="OZn-5B-zeH"/>
+                            <constraint firstItem="YMF-hc-xg3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UiA-BN-s9A"/>
+                            <constraint firstItem="jnK-So-9dh" firstAttribute="top" secondItem="xR3-fV-1xm" secondAttribute="bottom" constant="9" id="YCI-TF-Xqr"/>
+                            <constraint firstItem="xR3-fV-1xm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zhm-yT-QcP"/>
+                            <constraint firstItem="PXS-sf-ZIx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="bYm-6y-FFk"/>
+                            <constraint firstItem="jnK-So-9dh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dgm-aE-JOB"/>
+                            <constraint firstItem="gyl-7u-1df" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eWw-WO-GvA"/>
+                            <constraint firstItem="dvy-Q4-FUP" firstAttribute="top" secondItem="xR3-fV-1xm" secondAttribute="bottom" constant="20" id="oB0-YI-61R"/>
+                            <constraint firstItem="dvy-Q4-FUP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qbC-DP-cI0"/>
+                            <constraint firstItem="5lV-hi-1Gm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rLx-Ey-i14"/>
+                            <constraint firstItem="5lV-hi-1Gm" firstAttribute="top" secondItem="xR3-fV-1xm" secondAttribute="bottom" constant="-20.5" id="s55-Il-5eB"/>
+                            <constraint firstItem="h9g-D8-fa5" firstAttribute="top" secondItem="PXS-sf-ZIx" secondAttribute="bottom" constant="39.5" id="t1k-gg-HMJ"/>
+                            <constraint firstItem="PXS-sf-ZIx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xuY-CZ-QEP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -221,10 +252,23 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Uau-pd-KeU"/>
                     </view>
+                    <connections>
+                        <outlet property="CurrencyCreditsLabel" destination="JW3-8V-cLt" id="T7E-aC-dQs"/>
+                        <outlet property="Field1Label" destination="Ir7-vm-bmY" id="5p6-eI-JyU"/>
+                        <outlet property="Field1Value" destination="l1g-E4-wZ3" id="TWo-GT-FPj"/>
+                        <outlet property="Field2Label" destination="Xxb-0Z-MxF" id="9of-Wg-bGD"/>
+                        <outlet property="Field2Value" destination="BDp-yA-CL7" id="KJ0-lY-3R3"/>
+                        <outlet property="Field3Label" destination="0dR-nj-3QI" id="DFB-aV-R64"/>
+                        <outlet property="Field3Value" destination="pcY-WA-Rtu" id="gxV-Eu-gXA"/>
+                        <outlet property="Field4Label" destination="Xag-Bt-dgD" id="a2A-Xm-Kkq"/>
+                        <outlet property="Field4Value" destination="Y13-dl-ORL" id="Dst-RW-syd"/>
+                        <outlet property="UnitsEnglishLabel" destination="yx8-WC-9Al" id="Fct-xL-UCt"/>
+                        <outlet property="UnitsMetricLabel" destination="KbP-P8-08R" id="r5m-un-Rrn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Xt-oA-P2Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="956" y="133"/>
+            <point key="canvasLocation" x="956" y="132.68365817091455"/>
         </scene>
     </scenes>
     <resources>

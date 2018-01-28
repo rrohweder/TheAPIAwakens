@@ -21,6 +21,7 @@
 		108FCF9020113D3300AF7365 /* StarshipsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108FCF8F20113D3300AF7365 /* StarshipsModel.swift */; };
 		108FCF9220113D4F00AF7365 /* VehiclesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108FCF9120113D4F00AF7365 /* VehiclesModel.swift */; };
 		108FFF212012175400EA94AC /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108FFF202012175400EA94AC /* Endpoint.swift */; };
+		10C67090201E07FA000A2C80 /* PeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C6708F201E07FA000A2C80 /* PeopleView.swift */; };
 		10D9E0E12013A19D00343EBD /* icon-starship.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 10D9E0DE2013A19D00343EBD /* icon-starship.pdf */; };
 		10D9E0E22013A19D00343EBD /* icon-starship.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 10D9E0DE2013A19D00343EBD /* icon-starship.pdf */; };
 		10D9E0E32013A19D00343EBD /* icon-starship.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 10D9E0DE2013A19D00343EBD /* icon-starship.pdf */; };
@@ -71,6 +72,7 @@
 		108FCF8F20113D3300AF7365 /* StarshipsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarshipsModel.swift; sourceTree = "<group>"; };
 		108FCF9120113D4F00AF7365 /* VehiclesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesModel.swift; sourceTree = "<group>"; };
 		108FFF202012175400EA94AC /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		10C6708F201E07FA000A2C80 /* PeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleView.swift; sourceTree = "<group>"; };
 		10D9E0DE2013A19D00343EBD /* icon-starship.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "icon-starship.pdf"; sourceTree = "<group>"; };
 		10D9E0DF2013A19D00343EBD /* icon-characters.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "icon-characters.pdf"; sourceTree = "<group>"; };
 		10D9E0E02013A19D00343EBD /* icon-vehicle.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "icon-vehicle.pdf"; sourceTree = "<group>"; };
@@ -136,10 +138,11 @@
 		108FCF5E20113BAF00AF7365 /* TheAPIAwakens */ = {
 			isa = PBXGroup;
 			children = (
+				108FCF6320113BAF00AF7365 /* Main.storyboard */,
+				10C6708E201E07E4000A2C80 /* Views */,
 				10DDCF6D2019788400A42042 /* ViewControllers */,
 				10D9E0DD2013A15400343EBD /* Images */,
 				1048E7FB20120E4400B6F62B /* Networking */,
-				108FCF6320113BAF00AF7365 /* Main.storyboard */,
 				108FCF9320113D6300AF7365 /* Models */,
 				108FCF6620113BAF00AF7365 /* Assets.xcassets */,
 				108FCF6820113BAF00AF7365 /* LaunchScreen.storyboard */,
@@ -175,6 +178,14 @@
 				108FCF9120113D4F00AF7365 /* VehiclesModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		10C6708E201E07E4000A2C80 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				10C6708F201E07FA000A2C80 /* PeopleView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		10D9E0DD2013A15400343EBD /* Images */ = {
@@ -346,6 +357,7 @@
 				108FCF9020113D3300AF7365 /* StarshipsModel.swift in Sources */,
 				1048E7FD20120EC600B6F62B /* StarWarsAPIClient.swift in Sources */,
 				1048E801201210B400B6F62B /* StarWarsError.swift in Sources */,
+				10C67090201E07FA000A2C80 /* PeopleView.swift in Sources */,
 				108FCF8E20113BD400AF7365 /* PeopleModel.swift in Sources */,
 				108FCF6020113BAF00AF7365 /* AppDelegate.swift in Sources */,
 				108FCF9220113D4F00AF7365 /* VehiclesModel.swift in Sources */,
